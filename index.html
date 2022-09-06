@@ -29,7 +29,7 @@
     <title>Jerick Vegile M. Cataquiz</title>
   </head>
 
-  <body>
+  <body onload ="typeWriter()">
     <nav>
         <h1>Jerick Vegile M. Cataquiz</h1>
         <ul class="navigation">
@@ -43,7 +43,168 @@
         </button>
   </nav>
    
-   
+  <section class="hero" id="about">
+    <img
+      src="image/Jvcataquiz.jpg"
+      alt="Jvcataquiz"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        <p id="demo"></p>
+      </p>
+    </div>
+</section>
+<section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+      nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+      autem deleniti cupiditate molestias quis unde quae totam porro dicta
+      iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+      nostrum dolor minus, libero delectus praesentium perferendis
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+      consequuntur labore? Ea totam voluptas amet!
+    </p>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+      
+    </div>
+  </section>
+
+
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Expense Tracker</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Netflix Clone</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png"
+          alt="greeny-earth"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Greeny Earth</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
 
     <!-- Ion icons scripts -->
     <script
@@ -55,4 +216,18 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </body>
+
+  <script>
+    var i = 0;
+    var txt = 'Area 2 presents the mechanisms and best practices PUP employs to support the heart of all operations at the University—the Teaching, Learning, and Evaluation. This report particularly highlights the multi-level system of developing, revising, and approving curricula, the development of FlexTEL as teaching-learning delivery mode response to Covid-19, and the program accreditations and certifications PUP continues to pursue to keep all its services in check. Also included here are the evaluation systems, benchmarking activities, and the resources being utilized to keep up with the global trends in education';
+    var speed = 10;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    </script>
 </html>
