@@ -99,16 +99,36 @@ nav {
   }
 
   /* image */
+  #home .container {
+    width: 80%;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    margin: 10px auto;
+    position: relative;
+    overflow: hidden;
+ }
+ #home .overlay-itro{
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+     background-color: rgba(255, 255, 255, .15);
+     backdrop-filter: blur(5px);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     padding: 0;
+     height: 90%;
+     width: 90%;
+   }
   .hero {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 10.5rem;
+    justify-content: space-evenly;
+    gap: 5rem;
     max-width: 68.75rem;
     margin: auto;
   }
   .hero img {
-    height: 37.5rem;
+    height: 27.5rem;
 
   }
   /* about */
@@ -129,7 +149,9 @@ nav {
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
   }
-  
+  .bio-title{
+   text-align: left;
+  }
   .bio h1 {
     margin-bottom: var(--bottom-margin);
   }
@@ -272,8 +294,8 @@ nav {
 
   @media screen and (max-width: 420px) {
     .hero img {
-      height: 37.5rem;
-      width: 23rem;
+      height: 20.5rem;
+      
     }
   
     .bio {
@@ -288,3 +310,31 @@ nav {
       max-width: 17.75rem;
     }
   } 
+
+
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .overlay-mf {
+    background-color: #FEB336;
+  }
+  
+  .overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+  }
+  
+  .paralax-mf {
+    position: relative;
+    padding: 3rem 0;
+  }
