@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--The CSS styling-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 16px;
+      }
+      #buttons{
+        width: 50px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+   
+
+      <div class="container">
+      <div class="input">
+        <h1>Choose Countries </h1>
+ 
+        <select id="allcountries" name="countries">  </select>
+      
+      <button class="button" id="buttons">Search</button>
+      </div>
+    </div>
+      <div id="MyFrame"class="displayWeather">
+      </div>
+     
+     
+    <!--Linking the javascript code-->
+    <script src="js/allcountry.js"></script>
+  </body>
+</html>
