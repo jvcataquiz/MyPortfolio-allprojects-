@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--The CSS styling-->
     <style>
       * {
@@ -24,24 +26,164 @@
         width: 50px;
         height: 30px;
       }
+
+      @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+        
+        html, body{
+            height: 100%;
+        }
+        
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            background-color: #a5a5b1;
+            display: grid;
+            place-items: center;
+            
+        }
+        
+        .card {
+            background-color: #ffffff;
+            border-radius: 50px;
+            color: #6f707d;
+            font-family: 'Marcellus', serif;
+        }
+        
+        #heading{
+            font-size: 55px;    
+            color: #2b304d;
+        }
+        
+        .temp{
+            place-items: center;
+        }
+        
+        .temp-details > p >span, .grey{
+            color: #a3acc1;
+            font-size: 12px;
+        }
+        
+        .fa{
+            color: #a5a5b1
+        }
+        
+         *:focus{
+            outline: none;
+        }
+
+        .end{
+           display: flex;
+           justify-content: space-around;
+        }
+
+        select{
+     width: 70%;
+        }
+        .container-fluid{
+
+          width: 100%;
+
+        }
+        .container1{
+          border: 2px solid black;
+
+          width: 50%;
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 16px;
+
+        box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    position: absolute;
+  
+    
+        }
+        .bg-image{
+          background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(image/pupmain1.jpg)
+        }
+        
+       
     </style>
   </head>
-  <body>
+  <body class="bg-image">
    
 
-      <div class="container">
-      <div class="input">
-        <h1>Choose Countries </h1>
- 
-        <select id="allcountries" name="countries">  </select>
-      
-      <button class="button" id="buttons">Search</button>
-      </div>
+      <div class="container1 " >
+     
+  
+     
+      <div class="container-fluid">
+        <div class="input">
+          <h1>Choose Country </h1>
+   
+          <select id="allcountries" name="countries"> 
+          </select>
+        
+        <button class="button" id="buttons">Search</button>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-10 "> 
+                   <div class="card p-4">    
+                    
+                       <div class="d-flex">
+                           <h6 class="flex-grow-1" id="countryname">Finland</h6>
+                          
+                       </div>
+                        
+                       <div class="d-flex flex-column temp mt-5 mb-3">
+                           <h1 class="mb-0 font-weight-bold" id="heading"> 13&deg; C </h1>
+                           <span id="MyFrame" class="small grey">Stormy</span>
+                       </div>
+                       
+                       <div class="d-flex  container end">
+                           <div class="temp-details flex-grow-1">
+                                <p class="my-1">
+                                  <img src="icon/wind.png" height="25px" >
+                                   <span> 40 km/h  </span>
+                                </p>
+
+                                <p class="my-1"> 
+                                  <img src="icon/droplet.png" height="25px" >
+                                   <span> 84% </span> 
+                                </p>
+
+                                <p class="my-1"> 
+                                
+                                    <img src="icon/sun.png" height="25px" >
+                                    <span> 0.2h </span>
+                                </p>
+                           </div>
+                           
+                           <div id ="weathericon">
+                            <img src="http://www.gettyimages.ca/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg"  width="100px">
+                               
+                           </div>
+                           
+                           
+                       </div>
+                        
+          
+                    </div>
+                    <br> <br>
+            </div>
+           
+        </div>
+
+
     </div>
-      <div id="MyFrame"class="displayWeather">
-      </div>
-     
-     
+  </div>
     <!--Linking the javascript code-->
     <script src="js/allcountry.js"></script>
   </body>

@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
  
     const selectDrop = document.querySelector('#allcountries');
+    document.getElementById('weathericon').innerHTML = "<img src='https://api.openweathermap.org/img/w/04d.png' width='100px'>";
     // const selectDrop = document.getElementById('countries');
     fetch('https://restcountries.com/v3.1/all').then(res => {
     return res.json();
@@ -39,9 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     
 
-            const datadisplay=(weather)=> {
-                document.getElementById('MyFrame').innerHTML  = `${weather.main.temp}`;
- 
+            const datadisplay=(weatherapi)=> {
+                document.getElementById('MyFrame').innerHTML  = `${weatherapi.weather[0].description}`;
+                // document.getElementById('weathericon').src = "https://api.openweathermap.org/img/w/" +  `${weatherapi.weather[0].icon}`+ ".png";
+
+                document.getElementById('weathericon').innerHTML = "<img src='https://api.openweathermap.org/img/w/" +  weatherapi.weather[0].icon + ".png' width='100px'>";
+                document.getElementById('countryname').innerHTML = `${weatherapi.name}`;
+            
             }
         
      
