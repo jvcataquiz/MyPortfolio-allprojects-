@@ -16,7 +16,6 @@
    }
    #educ .container1 {
       width: 80%;
-      padding: 50px 0;
       margin: 50px auto;
       position: relative;
       overflow: hidden;
@@ -24,7 +23,7 @@
    .container1:before {
       content: '';
       position: absolute;
-      top: 120px;
+      top: 90px;
       left: 50%;
       margin-left: -1px;
       width: 2px;
@@ -36,9 +35,10 @@
    .timeline-content h3 {
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     color: #000;
+    text-align: center;
 }
 .timeline-block {
     width: -webkit-calc(50% + 8px);
@@ -58,9 +58,7 @@
  
     color: #fcff28;
  }
-.text-center {
-    text-align: center !important;
-}
+
 .timeline-block-right {
     float: right;
 }
@@ -84,13 +82,14 @@
     width: 95%;
     padding: 0 15px;
     color: #666;
+    text-align: center;
 }
 .title-a {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #f8f9fa;
- 
+ text-align: center;
 }
 @media screen and (max-width: 769px) {
     .container1:before {
@@ -139,4 +138,6 @@
     margin: auto;
   }
  }
-
+ .centertitle{
+text-align: center;
+ }

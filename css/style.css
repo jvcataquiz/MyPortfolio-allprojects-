@@ -128,11 +128,20 @@ nav {
     margin: auto;
   }
   .hero img {
-    height: 27.5rem;
+    height: 20.5rem;
 
   }
-  /* about */
 
+  .degree{
+    color: #ffffff !important;
+    font-size: 20px;
+   
+  }
+  /* about */
+  .aboutmyself{
+    text-align: justify;
+    text-indent: 2rem;
+  }
   #headd{color: rgb(0, 0, 0);
     text-align: center;
     font-size: 1.5vw;
@@ -144,13 +153,22 @@ nav {
     font-weight: italic;
     }
   .bio {
-    width: 35rem;
+    width: 40rem;
     padding: 0.625rem;
     border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    /* box-shadow: 0px 2px 15px 2px var(--primary-shadow); */
   }
   .bio-title{
+    
+    display: flex;
+    align-items: center;
    text-align: left;
+   color: white;
+   font-size: 45px;
+   font-weight: 900;
+   line-height: 1.2;
+  
+
   }
   .bio h1 {
     margin-bottom: var(--bottom-margin);
@@ -159,6 +177,22 @@ nav {
   .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+  }
+
+  #hero{
+    display: flex;
+    justify-content: space-around;
+  }
+  .graduated {
+    font-size: 15px;
+    color: white !important;
+  }
+  .graduated a{
+    font-size: 15px;
+    color: black !important;
+  }
+  .graduated a:hover{
+    color: red !important;
   }
   /* more about */
   .more-about {
@@ -294,7 +328,7 @@ nav {
 
   @media screen and (max-width: 420px) {
     .hero img {
-      height: 20.5rem;
+      height: 10.5rem;
       
     }
   
@@ -338,3 +372,32 @@ nav {
     position: relative;
     padding: 3rem 0;
   }
+  .centerpic{
+    display: flex;
+    justify-content: center;
+    line-height: 1.2;
+  }
+  .input{
+    color:black;
+  }
+
+  .social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: .5rem;
+
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #000000;
+    transition: .4s;
+}
