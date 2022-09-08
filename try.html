@@ -89,7 +89,6 @@ cursor: pointer;
             }
    
 } 
-
 </style>
 </head>
 <body>
@@ -97,10 +96,10 @@ cursor: pointer;
         <h1><a href="index.html" class="nav-link">Portfolio</a></h1>
         <ul class="navigation">
           <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="Contact.html" class="nav-link">Contact</a></li>
+          <h3><a href="Contact.html" class="nav-link">Contact</a></h3>
         </ul>
         <div id="mobile-nav-btn" class="mobile-nav-btn">
-            <img src="icon/menu.png" alt="" onclick="openNav()">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         </div>
       </nav>
 
@@ -109,23 +108,25 @@ cursor: pointer;
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="projects.html" class="nav-link">Projects</a>
-    <a href="Contact.html" class="nav-link">Contact</a>
-   
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
 </div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+
 
 <script>
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
-  document.getElementById("mobile-nav-btn").innerHTML  ="";
 }
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
-  document.getElementById("mobile-nav-btn").innerHTML  ="  <img src='icon/menu.png' onclick='openNav()'>";
-  
-  
 }
 </script>
      

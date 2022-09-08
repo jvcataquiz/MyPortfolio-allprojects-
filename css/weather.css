@@ -23,7 +23,7 @@
   html,
   body {
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   * {
@@ -111,7 +111,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
+    background-position:right bottom;
     background-image: url(/image/pupmain1.jpg)
   }
 
