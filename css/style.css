@@ -211,10 +211,11 @@ nav {
   }
 /* skill */
   .skills {
-    max-width: 68.75rem;
+    /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
+    
   }
   
   .skill-header {
@@ -223,11 +224,12 @@ nav {
   
   .skills-wrapper img {
     padding: 1.25rem;
+   
   }
   
   .icon {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 12.875rem;
+    height: 12.25rem;
   }
 
   /* //skill */
@@ -392,7 +394,7 @@ nav {
     color: #eee;
     cursor: pointer;
     margin-right: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #fcff287d;
     margin-top: .5rem;
 
 }
@@ -409,7 +411,7 @@ nav {
   font-size: 20px;
  }
 .social a{
-  font-size: 12px;
+  font-size: 15px;
   width: 30px;
   height: 30px;
 }
@@ -417,4 +419,21 @@ nav {
   flex-direction: column-reverse;
   gap: 0.5em;
 }
+.icon{
+  width: 5.875rem;
+    height: 5.25rem;
+}
+}
+
+.more p{
+margin: 0 5%;
+text-align: justify;
+line-height: 2;
+}
+#more{
+  text-align: center;
+  margin:1rem 0;
+}
+.titleblk{
+  color:black !important;
 }
