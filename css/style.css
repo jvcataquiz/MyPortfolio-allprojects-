@@ -394,13 +394,15 @@ nav {
     color: #eee;
     cursor: pointer;
     margin-right: 20px;
-    background-color: #fcff287d;
+    background-color: #000000;
     margin-top: .5rem;
 
 }
 .social a:hover{
     transform: scale(1.1);
-    background: #000000;
+    background: #eee;
+
+    color: black;
     transition: .4s;
 }
 
