@@ -401,3 +401,20 @@ nav {
     background: #000000;
     transition: .4s;
 }
+
+
+@media screen and (max-width: 920px) {
+ .bio-title{
+  margin-top: .5rem;
+  font-size: 20px;
+ }
+.social a{
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+}
+.hero {
+  flex-direction: column-reverse;
+  gap: 0.5em;
+}
+}
