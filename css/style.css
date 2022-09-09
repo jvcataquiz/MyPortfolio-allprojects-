@@ -36,7 +36,7 @@ html {
   box-sizing: border-box;
 }
 
-ul {
+#navigation-menu ul, #myNav ul {
   list-style-type: none;
 }
 
@@ -61,7 +61,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 3.5rem;
+    padding: 1rem 5%;
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
@@ -139,9 +139,18 @@ nav {
   }
   /* about */
   .aboutmyself{
+    text-align: left;
+    margin: 0 5%;
+     text-align: justify;
+  }
+  .introduc{
     text-align: justify;
     text-indent: 2rem;
+
   }
+  .aboutmyself li { display:inline-block; margin-right:15px; }
+  
+
   #headd{color: rgb(0, 0, 0);
     text-align: center;
     font-size: 1.5vw;
