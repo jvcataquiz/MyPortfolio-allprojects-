@@ -1,122 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-<style>
-body {
-  font-family: 'Lato', sans-serif;
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+<style>body {
+  padding-top: 20px;
 }
 
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+.card-deck {
+  margin: 0 -15px;
+  justify-content: space-between;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+.card-deck .card {
+  margin: 0 0 1rem;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
   }
 }
 
-
-.navigatio a {
-
-font-size: 15px;
-padding: 12px 0px;
-
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
 }
 
-.navigation {
-align-items: center;
-font-family: 'Roboto', sans-serif;
-padding: 12px 0;
+@media (min-width: 992px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
+  }
 }
-
-div.mobile-nav-btn {
-display: none;
-cursor: pointer;
-}
-
-
-@media screen and (max-width: 920px) {
-  .navigation{
-    width: 90%;}
-    .navigation{
-                display: none;
-            }
-            div.mobile-nav-btn {
-                display: block;
-            }
-   
-} 
-
 </style>
-</head>
 <body>
-  <p>
-    Polytechnic University of the Philippines (College of Engineering Accreditation OJT) || Junior Web 
-    Developer (August 2021 to September 2021)
-    <ul style="list-style-type:square; color:black"> 
-      <li>Lead the development of a webpage for the Computer, Electronics, Industrial, and Railway Engineering Level 4 AACCUP Accreditation using HTML, CSS, JS, Bootstrap, and Firebase (deployment of the webpage to the Internet).</li>
-      <li>Direct contact with the Chairperson of every Department, Accreditor Supervisor, and the 
-        Dean of the College</li>
-      <li>Plan and create the design and layout of the webpage to migrate official administrative documents 
-        and manuscripts for the exclusive use of accreditors</li>
-      <li>Important document compilations from all Departments were organized and managed.</li>
-      <li>Actively  responded for the revision of the documents needed for the accreditation</li>
-      <li>All Departments are successfully passed the Level 4 AACCUP Accreditation </li>
-    </ul>
-  </p>
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-     
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1050" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1041" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1039" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://picsum.photos/309/200?image=1019" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
