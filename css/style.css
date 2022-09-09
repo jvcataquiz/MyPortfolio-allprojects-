@@ -51,7 +51,7 @@ a:hover {
 
 body {
   font-family: var(--font-family);
-  overflow-x: hiden;
+  overflow-x: hidden;
 }
 nav {
     position: sticky;
@@ -140,15 +140,19 @@ nav {
   /* about */
   .aboutmyself{
     text-align: left;
-    margin: 0 5%;
-     text-align: justify;
+    margin: 2rem 5%;
+    text-align: justify;
   }
   .introduc{
     text-align: justify;
     text-indent: 2rem;
 
   }
-  .aboutmyself li { display:inline-block; margin-right:15px; }
+  .aboutmyself  p {font-size: 16px;
+    font-weight: 700;
+    color: #000;}
+  .aboutmyself ul {     line-height: var(--line-height);
+    padding: 0.3rem 0;display:inline-block; margin-left:3rem; }
   
 
   #headd{color: rgb(0, 0, 0);
@@ -354,6 +358,8 @@ nav {
     .contact-form-container {
       max-width: 17.75rem;
     }
+    .aboutmyself ul {     line-height: var(--line-height);
+      padding: 0.3rem 0;display:inline-block; margin-left:2rem; }
   } 
 
 
@@ -425,6 +431,7 @@ nav {
   font-size: 15px;
   width: 30px;
   height: 30px;
+  
 }
 .hero {
   flex-direction: column-reverse;
