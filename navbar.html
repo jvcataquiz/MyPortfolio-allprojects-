@@ -9,16 +9,17 @@ body {
 }
 
 .overlay {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 0px;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: white;
+  /* background-color: rgba(0,0,0, 0.9); */
   overflow-x: hidden;
   transition: 0.5s;
+  line-height: 1.5;
 }
 
 .overlay-content {
@@ -32,21 +33,22 @@ body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+  font-size: 30px;
+  color: black;
   display: block;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #ff0000;
 }
 
 .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 30px;
 }
 
 @media screen and (max-height: 450px) {
@@ -112,19 +114,20 @@ cursor: pointer;
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
     <a href="projects.html" class="nav-link">Projects</a>
-    <a href="Contact.html" class="nav-link">Get in Touch</a>
     <a href="#" class="nav-link">Certificates</a>
+    <a href="Contact.html" class="nav-link">Get in Touch</a>
   </div>
 </div>
 
 <script>
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.height = "50%";
+ 
   document.getElementById("mobile-nav-btn").innerHTML  ="";
 }
 
 function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("myNav").style.height= "0%";
   document.getElementById("mobile-nav-btn").innerHTML  ="  <img src='icon/menu.png' onclick='openNav()'>";
   
   

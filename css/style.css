@@ -152,7 +152,7 @@ nav {
     font-weight: 700;
     color: #000;}
   .aboutmyself ul {     line-height: var(--line-height);
-    padding: 0.3rem 0;display:inline-block; margin-left:3rem; }
+    padding: 0.3rem 0;display:inline-block; margin-left:3rem; font-weight: 500;}
   
 
   #headd{color: rgb(0, 0, 0);
@@ -450,7 +450,7 @@ line-height: 2;
 }
 #more{
   text-align: center;
-  margin:1rem 0;
+  margin:2.5rem 0;
 }
 .titleblk{
   color:black !important;
