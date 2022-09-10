@@ -467,10 +467,10 @@ ProjectCSS */
   margin: 1rem 0;
 }
 
-.row {margin: 0 -5px; }
+.rowcard {margin: 0 -5px; }
 
 /* Clear floats after the columns */
-.row:after {
+.rowcard:after {
   content: "";
   display: table;
   clear: both;
