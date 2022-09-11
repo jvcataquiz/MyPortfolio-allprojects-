@@ -483,7 +483,10 @@ ProjectCSS */
   margin: 1rem 0;
 }
 
-.rowcard {margin: 0 -5px; }
+.rowcard {margin:0 5% ; 
+
+
+}
 
 /* Clear floats after the columns */
 .rowcard:after {
@@ -522,15 +525,15 @@ ProjectCSS */
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  margin: 0 10%;
+  /* margin: 0 10%; */
 }
 
 @media screen and (max-width: 400px) {
-  .column {
+  /* .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-  }
+  } */
 
 }
 
