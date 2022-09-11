@@ -39,9 +39,9 @@ const car = {
 
       document.getElementById("project-card").innerHTML ="";
   if(seletedproject === "all"){
-    document.getElementById("project-card").innerHTML  ="";
+  
     for (let i = 0 ; i < car.data.length ; i++) {
-     
+   
        document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[i].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[i].title+"</h3><p class='project-details'>"+ car.data[i].description+"</p><a href='"+ car.data[i].projectlink+"' target='_blank' class='project-link'> Visit Link </a></div></div>";
     }
   }
@@ -49,6 +49,7 @@ const car = {
     for (let j = 0 ; j < car.data.length  ; j++) {
     
       if(seletedproject  == car.data[j].projectlanguage){
+      
        document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[j].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[j].title+"</h3><p class='project-details'>"+ car.data[j].description+"</p><a href='"+ car.data[j].projectlink+"' target='_blank' class='project-link'> Visit Link </a></div></div>";
       }
      }

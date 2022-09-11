@@ -274,6 +274,7 @@ nav {
     background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
+    animation: hideMe 2s forwards;
   }
   
   .project-pic {
@@ -288,7 +289,7 @@ nav {
   }
   .projects-title {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 2rem 0;
   }
   
   .project-container {
@@ -532,3 +533,29 @@ ProjectCSS */
 }
 
 
+.prog-selection{
+ width: 0%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+
+}
+
+.select-dropdown {
+  position: relative;
+  background-color: #E6E6E6;
+  border-radius: 4px;
+ 
+  appearance: none;
+
+}
+
+.select-dropdown select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-dropdown select{
+  font-size: 1.2rem;
+  padding: 0 .5rem;
+}
