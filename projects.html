@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body class="bg-image" style="background-image: url(image/pupmain1.jpg)">
-    <div id="b-placeholder">
-    </div>
-    <div class="testimonials paralax-mf" > 
-      <div class="overlay-itro"></div>
-    <section class="projects" id="projects" >
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-        <div class="rowcard">
-          <div  id="project-card">
-          </div>
+
+<body  onload="myFunction()" class="bg-image" style="background-image: url(image/pupmain1.jpg)">
+  <div id="b-placeholder">
+  </div>
+  <h2 class="projects-title">Some of my Recent Projects</h2>
+  <select id="selected" onchange="myFunction()">
+
+    <option value="all" selected="selected">AllProject</option>
+    <option value="C#" >C# .net</option>
+    <option value="Web" >College Accreditation (Web Development)</option>
+    <option value="java" >Java</option>
+    <option value="javascript" >Javascript</option>
+    <option value="Python" >Python</option>
+    <option value="Php" >PHP with SQL</option>
+    <option value="Api" >Project with Api</option>
+    <option value="Game" >Simple Game Development</option>
+    <option value="Vb" >VB.net</option>
+
+  </select>
+  <div class="testimonials paralax-mf">
+    <div class="overlay-itro"></div>
+    <section class="projects" id="projects">
+      <div class="rowcard">
+        <div id="project-card">
         </div>
-    
+      </div>
+
     </section>
   </div>
   <script>
-    $(function(){
+    $(function () {
       $("#b-placeholder").load("navbar.html");
     });
-    </script>
+  </script>
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="js/project.js"></script>
 
 </body>
+
 </html>
