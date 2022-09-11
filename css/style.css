@@ -125,6 +125,10 @@ nav {
      padding: 0;
      height: 90%;
      width: 90%;
+     z-index: 1;
+   }
+   .container{
+    z-index: 10;
    }
   .hero {
     display: flex;
@@ -376,9 +380,10 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    z-index: -1;
+    -webkit-transform: translate3d(0,0,1px);
+    transform: translate3d(0,0,1px);
   }
-  
+
   .overlay-mf {
     background-color: #FEB336;
   }
@@ -419,7 +424,11 @@ nav {
     margin-right: 20px;
     background-color: #000000;
     margin-top: .5rem;
+   
 
+}
+.social{
+ z-index: 1100 !important;
 }
 .social a:hover{
     transform: scale(1.1);
