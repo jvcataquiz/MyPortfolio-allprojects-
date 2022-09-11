@@ -8,7 +8,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family:'Lato', sans-serif !important;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
@@ -149,6 +149,12 @@ nav {
    
   }
   /* about */
+  #about-myself,#skills{
+    background-color: white;
+    padding: 0.5rem 0;
+    font-family: 'Lato', sans-serif !important;
+  }
+ 
   .aboutmyself{
     text-align: left;
     margin: 2rem 5%;
@@ -238,7 +244,7 @@ nav {
     /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    /* margin-top: 2.5rem; */
     
   }
   
@@ -380,8 +386,7 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
-    -webkit-transform: translate3d(0,0,1px);
-    transform: translate3d(0,0,1px);
+    z-index: -1;
   }
 
   .overlay-mf {
@@ -427,9 +432,7 @@ nav {
    
 
 }
-.social{
- z-index: 1100 !important;
-}
+
 .social a:hover{
     transform: scale(1.1);
     background: #eee;
