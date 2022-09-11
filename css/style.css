@@ -113,7 +113,6 @@ nav {
     margin: 10px auto;
     position: relative;
     overflow: hidden;
-    z-index: 12;
  }
  #home .overlay-itro{
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
@@ -126,7 +125,6 @@ nav {
      padding: 0;
      height: 90%;
      width: 90%;
-     z-index: 11;
    }
   
   .hero {
