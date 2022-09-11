@@ -513,6 +513,7 @@ ProjectCSS */
     display: block;
     margin-bottom: 20px;
   }
+ 
 }
 
 /* Style the counter cards */
@@ -523,13 +524,14 @@ ProjectCSS */
   background-color: #f1f1f1;
   margin: 0 10%;
 }
+
 @media screen and (max-width: 400px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
-  
+
 }
 
 
@@ -556,6 +558,5 @@ ProjectCSS */
   box-shadow: none;
 }
 .select-dropdown select{
-  font-size: 1.2rem;
-  padding: 0 .5rem;
+  font-size: 1.05rem;
 }
