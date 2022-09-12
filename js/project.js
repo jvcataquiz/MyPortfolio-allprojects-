@@ -9,32 +9,82 @@ const car = {
       "data": [
         { 
           "projectlanguage": "C#",
-          "imagelink": 'https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png',
-          "title": "1",
-          "description":" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasratione vel inventore labore commodi modi quos culpa aut saepe!Alias!",
-          "projectlink":"#"
-        },
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Contact Tracing App",
+          "description":"An application that allows users to submit their necessary information and saves it to a text file is made using C#.net.",
+          "projectlink":"https://github.com/jvcataquiz/Contact_Tracing"
+        }, 
         { 
-          "projectlanguage": "java",
-          "imagelink": 'https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png',
-          "title": "java",
-          "description":" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasratione vel inventore labore commodi modi quos culpa aut saepe!Alias!",
-          "projectlink":"#"
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Contact Tracing Viewer",
+          "description":"An application that allows users to browse and display the existing information that their submitted in the Contact tracing App.",
+          "projectlink":"https://github.com/jvcataquiz/ContactTracinUserViewer"
         },
         { 
           "projectlanguage": "C#",
-          "imagelink": 'https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png',
-          "title": "2",
-          "description":" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasratione vel inventore labore commodi modi quos culpa aut saepe!Alias!",
-          "projectlink":"#"
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "TicTacToe",
+          "description":"An application that allows users to play Tictactoe against other user or  a computer.",
+          "projectlink":"https://github.com/jvcataquiz/TICTACTOE"
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Seven Segment",
+          "description":"A application look likes seven segment created in C#.net and displaying real time.",
+          "projectlink":"https://github.com/jvcataquiz/SevenSegment"
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "PDF Resume Creator",
+          "description":"An application that allows users to submit their necessary information and generates resume from json file to pdf.",
+          "projectlink":"https://github.com/jvcataquiz/PDF-RESUME-CREATOR"
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Contact Tracing App QR Code",
+          "description":"An application will automatically input the data when the camera scans a QR code and save it to a text file.",
+          "projectlink":"https://github.com/jvcataquiz/CONTACT_TRACING_APP-QR_CODE-"
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Scientific Calculator",
+          "description":"An application created in C#.net with the functionality of standard scientific calculator.",
+          "projectlink":" "
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Bike Rental System",
+          "description":"An application that rents out bicycles for short periods of time. This application allow user to add, create, delete, or update bikes, customers and users to the database.",
+          "projectlink":" "
+        },
+        { 
+          "projectlanguage": "C#",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+          "title": "Weather App",
+          "description":"This application allow users to input a city or country and display the weather forecast of the user's input.",
+          "projectlink":"https://github.com/jvcataquiz/Weather-app-with-Api"
         },
         { 
           "projectlanguage": "java",
-          "imagelink": 'https://www.pngfind.com/pngs/m/683-6834213_transparent-html-logo-png-png-download.png',
-          "title": "java",
-          "description":" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasratione vel inventore labore commodi modi quos culpa aut saepe!Alias!",
-          "projectlink":"#"
-        }
+          "imagelink": 'https://www.techworm.net/programming/wp-content/uploads/2018/07/java-logo-150x150.jpg',
+          "title": "Java Calculator",
+          "description":"It is a simple java program that allow users to add, subract, multiply and divide. ",
+          "projectlink":"https://github.com/jvcataquiz/Java-Fundamentals-with-java-output-/blob/master/Project1/src/calculator.java"
+        },
+        { 
+          "projectlanguage": "java",
+          "imagelink": 'https://www.techworm.net/programming/wp-content/uploads/2018/07/java-logo-150x150.jpg',
+          "title": "Java Grade Converter",
+          "description":"it is a program that dynamically averages all user's inputs before determining whether a user passed or failed.",
+          "projectlink":"https://github.com/jvcataquiz/Java-Fundamentals-with-java-output-/blob/master/Project1/src/GradeConverter.java"
+        },
+      
       ]};
 
       document.getElementById("project-card").innerHTML ="";
@@ -42,7 +92,7 @@ const car = {
   
     for (let i = 0 ; i < car.data.length ; i++) {
    
-       document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[i].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[i].title+"</h3><p class='project-details'>"+ car.data[i].description+"</p><a href='"+ car.data[i].projectlink+"' target='_blank' class='project-link'> Visit Link </a></div></div>";
+       document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[i].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[i].title+"</h3><p class='project-details'>"+ car.data[i].description+"</p><a  href='"+ car.data[i].projectlink+"' target='_blank' class='project-link'> VIEW </a></div></div>";
     }
   }
   else{
@@ -50,7 +100,7 @@ const car = {
     
       if(seletedproject  == car.data[j].projectlanguage){
       
-       document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[j].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[j].title+"</h3><p class='project-details'>"+ car.data[j].description+"</p><a href='"+ car.data[j].projectlink+"' target='_blank' class='project-link'> Visit Link </a></div></div>";
+       document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[j].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[j].title+"</h3><p class='project-details'>"+ car.data[j].description+"</p><a href='"+ car.data[j].projectlink+"' target='_blank' class='project-link'> VIEW </a></div></div>";
       }
      }
     
