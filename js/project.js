@@ -84,6 +84,20 @@ const car = {
           "description":"it is a program that dynamically averages all user's inputs before determining whether a user passed or failed.",
           "projectlink":"https://github.com/jvcataquiz/Java-Fundamentals-with-java-output-/blob/master/Project1/src/GradeConverter.java"
         },
+         { 
+          "projectlanguage": "javascript",
+          "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/image_preview-150x150.png',
+          "title": "FreecodeCamp Javascript",
+          "description":"My collection of javascript exercises.",
+          "projectlink":"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+        },
+        { 
+         "projectlanguage": "javascript",
+         "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/image_preview-150x150.png',
+         "title": "Javascript Exercises",
+         "description":"My collection of javascript exercises part 2.",
+         "projectlink":"https://github.com/jvcataquiz/Javascript-Exercises"
+       }
       
       ]};
 
