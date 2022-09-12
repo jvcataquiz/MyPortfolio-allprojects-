@@ -389,6 +389,13 @@ nav {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    z-index: -2;
+  }
+  .bg-imageskill {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
     z-index: -1;
   }
 
