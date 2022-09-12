@@ -154,7 +154,7 @@ nav {
  
   .aboutmyself{
     text-align: left;
-    margin: 2rem 5%;
+    margin: 2rem 10%;
     text-align: justify;
   }
   .introduc{
@@ -469,9 +469,10 @@ line-height: 2;
 #more{
   text-align: center;
   margin:2.5rem 0;
+  color: black;
 }
-.titleblk{
-  color:black !important;
+#skills{
+padding-top: 2rem ;
 }
 
 /* 
