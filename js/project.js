@@ -97,8 +97,38 @@ const car = {
          "title": "Javascript Exercises",
          "description":"My collection of javascript exercises part 2.",
          "projectlink":"https://github.com/jvcataquiz/Javascript-Exercises"
-       }
-      
+       } ,
+       { 
+        "projectlanguage": "Python",
+        "imagelink": 'https://gss-technology.com/wp-content/uploads/2021/07/04.png',
+        "title": "Movie Watchlist App",
+        "description":"This program uses SQLite as its database and allows users to log in, add movies, browse all upcoming films, and determine whether a film has previously been seen.",
+        "projectlink":"https://github.com/jvcataquiz/Python-Sqlite-and-Elephant-sql-sql-/blob/master/Movie%20Watchlist%20app.zip"
+      }
+      ,
+       { 
+        "projectlanguage": "Python",
+        "imagelink": 'https://gss-technology.com/wp-content/uploads/2021/07/04.png',
+        "title": "Poll App",
+        "description":"Using ElephantSql as its database this program allows user to vote and determine the winner of the poll. ",
+        "projectlink":"https://github.com/jvcataquiz/Python-Sqlite-and-Elephant-sql-sql-/blob/master/Poll%20app(Final).zip"
+      }
+      ,
+       { 
+        "projectlanguage": "Python",
+        "imagelink": 'https://gss-technology.com/wp-content/uploads/2021/07/04.png',
+        "title": "Programming for Beginners",
+        "description":"My collection of python exercises for Beginner",
+        "projectlink":"https://github.com/jvcataquiz/Activity2-Course1--Programming-with-Python-Cources-Elec-4-"
+      }
+      ,
+       { 
+        "projectlanguage": "Python",
+        "imagelink": 'https://gss-technology.com/wp-content/uploads/2021/07/04.png',
+        "title": "Programming for Intermediate",
+        "description":"My collection of python exercises for Beginner",
+        "projectlink":"https://github.com/jvcataquiz/Activity2-Course2--Programming-for-Intermediate-Users-Using-Python-Elec-4-"
+      }
       ]};
 
       document.getElementById("project-card").innerHTML ="";
