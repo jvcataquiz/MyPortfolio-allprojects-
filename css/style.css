@@ -146,8 +146,13 @@ nav {
    
   }
   /* about */
-  #about-myself,#skills{
+  #about-myself{
     background-color: white;
+    padding: 0.5rem 0;
+    font-family: 'Lato', sans-serif !important;
+  }
+  #skills{
+
     padding: 0.5rem 0;
     font-family: 'Lato', sans-serif !important;
   }
@@ -237,7 +242,7 @@ nav {
     padding: 0.4rem;
   }
 /* skill */
-  .skills {
+  #skills {
     /* max-width: 68.75rem; */
     margin: auto;
     text-align: center;
