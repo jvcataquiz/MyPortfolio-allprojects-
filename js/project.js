@@ -128,7 +128,57 @@ const car = {
         "title": "Programming for Intermediate",
         "description":"My collection of python exercises for Beginner",
         "projectlink":"https://github.com/jvcataquiz/Activity2-Course2--Programming-for-Intermediate-Users-Using-Python-Elec-4-"
-      }
+      },
+      { 
+       "projectlanguage": "Python",
+       "imagelink": 'https://gss-technology.com/wp-content/uploads/2021/07/04.png',
+       "title": "101 Exercises for Python",
+       "description":"101 Exercises for Python Fundamentals in Colab",
+       "projectlink":"https://colab.research.google.com/drive/1J0P2oUbAsGFScbpVnspkBg87dAokfU5n?usp=sharing"
+     },
+      { 
+       "projectlanguage": "Php",
+       "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/php-logo-flat-150x150.png',
+       "title": "Phonebook Contact",
+       "description":"Using Php that allows user to store,update, delete and browe the information of the contact in the database",
+       "projectlink":"http://elecs4activitygroup2.lovestoblog.com/index.php?i=1"
+     }
+     ,
+      { 
+       "projectlanguage": "Game",
+       "imagelink": 'https://i.pinimg.com/originals/64/56/44/645644abd6cd5ace53ee449a20be874d.png',
+       "title": "Space Destroyer",
+       "description":"This Basic 2D game allows user to fight against bot spaceship and proceed to the next level.",
+       "projectlink":"https://jvcataquiz.itch.io/jv-space-destroyer"
+     },
+     { 
+      "projectlanguage": "Game",
+      "imagelink": 'https://i.pinimg.com/originals/64/56/44/645644abd6cd5ace53ee449a20be874d.png',
+      "title": "Solar System",
+      "description":"This 3D game is a representation of the Solar System the user can focus a planets he/she wants.",
+      "projectlink":"https://jvcataquiz.itch.io/jvs-solar-system"
+    },
+    { 
+      "projectlanguage": "Vb",
+      "imagelink": 'https://dorica.sk/wp-content/uploads/2018/11/prog_vbnet.png',
+      "title": "TicTacToe Vb.net",
+      "description":"Using Vb.net to create an application that allows users to play Tictactoe against other user.",
+      "projectlink":"https://github.com/jvcataquiz/TicTocToe-Vbnet"
+    },
+    { 
+      "projectlanguage": "Vb",
+      "imagelink": 'https://dorica.sk/wp-content/uploads/2018/11/prog_vbnet.png',
+      "title": "Contact Tracing App Vb.net",
+      "description":"Using Vb.net to create an application will automatically input the data when the camera scans a QR code and save it to a text file.",
+      "projectlink":"https://github.com/jvcataquiz/contact-tracing-vb"
+    }, { 
+      "projectlanguage": "Vb",
+      "imagelink": 'https://dorica.sk/wp-content/uploads/2018/11/prog_vbnet.png',
+      "title": "Contact Tracing Viewer Vb.net",
+      "description":"Using Vb.net to create an application that allows users to browse and display the existing information that their submitted in the Contact tracing App.",
+      "projectlink":"https://github.com/jvcataquiz/contact-tracing-viewer-vb"
+    }
+    
       ]};
 
       document.getElementById("project-card").innerHTML ="";
