@@ -135,13 +135,6 @@ const car = {
        "title": "101 Exercises for Python",
        "description":"101 Exercises for Python Fundamentals in Colab",
        "projectlink":"https://colab.research.google.com/drive/1J0P2oUbAsGFScbpVnspkBg87dAokfU5n?usp=sharing"
-     },
-      { 
-       "projectlanguage": "Php",
-       "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/php-logo-flat-150x150.png',
-       "title": "Phonebook Contact",
-       "description":"Using Php that allows user to store,update, delete and browe the information of the contact in the database",
-       "projectlink":"http://elecs4activitygroup2.lovestoblog.com/index.php?i=1"
      }
      ,
       { 
@@ -178,7 +171,86 @@ const car = {
       "description":"Using Vb.net to create an application that allows users to browse and display the existing information that their submitted in the Contact tracing App.",
       "projectlink":"https://github.com/jvcataquiz/contact-tracing-viewer-vb"
     }
-    
+    ,
+        { 
+          "projectlanguage": "Vb",
+          "imagelink": 'https://dorica.sk/wp-content/uploads/2018/11/prog_vbnet.png',
+          "title": "PDF Resume Creator Vb.net",
+          "description":"Using Vb.net to create an application that allows users to submit their information and generates resume from json file to pdf.",
+          "projectlink":"https://github.com/jvcataquiz/PDF-Resume-Creator-VB.net-"
+        }
+        ,
+        { 
+          "projectlanguage": "Vb",
+          "imagelink": 'https://dorica.sk/wp-content/uploads/2018/11/prog_vbnet.png',
+          "title": "Filedownloader App",
+          "description":"Using Vb.net to create an application that allows to input url he/she wants to download.",
+          "projectlink":"https://github.com/jvcataquiz/Fildedownloader---vbnet"
+        },
+        { 
+          "projectlanguage": "Api",
+          "imagelink": 'https://cdn.emojidex.com/emoji/seal/API.png?1417139918',
+          "title": "Weather Api C#",
+          "description":"This application allow users to input a city or country and display the weather forecast of the user's input.",
+          "projectlink":"https://github.com/jvcataquiz/Weather-app-with-Api"
+        },
+        { 
+          "projectlanguage": "Api",
+          "imagelink": 'https://cdn.emojidex.com/emoji/seal/API.png?1417139918',
+          "title": "Weather & Country Api Webpage",
+          "description":"This application allow users to select country and display the weather forecast of the selected country.",
+          "projectlink":"https://jvcataquiz.github.io/MyPortfolio-allprojects-/weatherapp.html"
+        },
+        { 
+         "projectlanguage": "Web",
+         "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+         "title": "College Accreditations",
+         "description":"Using Html, Css, Bootscrap etc. to create a webpages for the Four Departments in Level 4 ACCUPP Acreditation. ",
+         "projectlink":"https://github.com/jvcataquiz/College-of-Engineering-Accreditaion-Projects"
+       },
+       { 
+        "projectlanguage": "Web",
+        "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+        "title": "Codepen Exercises",
+        "description":"My collection of webpage exercise in Codepen",
+        "projectlink":"https://codepen.io/jvcataquiz"
+      }
+      ,
+       { 
+        "projectlanguage": "Web",
+        "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+        "title": "Creation of My Portfolio",
+        "description":"Using github to upload and to view the mileston of the creation of my portfolio. ",
+        "projectlink":"https://codepen.io/jvcataquiz"
+      },
+      { 
+        "projectlanguage": "Web",
+        "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+        "title": "Weather & Country Webpage",
+        "description":"This webpage allow users to select country and display the weather forecast of the selected country.",
+        "projectlink":"https://jvcataquiz.github.io/MyPortfolio-allprojects-/weatherapp.html"
+      },
+      { 
+       "projectlanguage": "Web",
+       "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+       "title": "Phonebook Contact",
+       "description":"Using Php that allows user to store,update, delete and browe the information of the contact in the database",
+       "projectlink":"http://elecs4activitygroup2.lovestoblog.com/index.php?i=1"
+     }
+     ,
+      { 
+       "projectlanguage": "Data",
+       "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
+       "title": "Phonebook Contact",
+       "description":"Using Php that allows user to store,update, delete and browe the information of the contact in the database",
+       "projectlink":"http://elecs4activitygroup2.lovestoblog.com/index.php?i=1"
+     },{ 
+      "projectlanguage": "Data",
+      "imagelink": 'https://techworm.net/programming/wp-content/uploads/2018/07/ap550x55012x121transparentt-150x150.png',
+      "title": "Bike Rental System",
+      "description":"An application that rents out bicycles for short periods of time. This application allow user to add, create, delete, or update bikes, customers and users to the database.",
+      "projectlink":" "
+    },
       ]};
 
       document.getElementById("project-card").innerHTML ="";
@@ -192,7 +264,7 @@ const car = {
   else{
     for (let j = 0 ; j < car.data.length  ; j++) {
     
-      if(seletedproject  == car.data[j].projectlanguage){
+      if(seletedproject  == car.data[j].projectlanguage ){
       
        document.getElementById("project-card").innerHTML += "<div class='column'> <div class='card'><img src='"+ car.data[j].imagelink+"' alt='greeny-earth'class='project-pic'/><h3 class='project-title'>"+ car.data[j].title+"</h3><p class='project-details'>"+ car.data[j].description+"</p><a href='"+ car.data[j].projectlink+"' target='_blank' class='project-link'> VIEW </a></div></div>";
       }

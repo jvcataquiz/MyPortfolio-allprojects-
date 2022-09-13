@@ -545,6 +545,7 @@ ProjectCSS */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-radius: 30px;
 }
 /* Responsive columns */
 @media screen and (max-width: 620px) {
@@ -558,12 +559,12 @@ ProjectCSS */
   }
   .project-details{
     font-size: 1rem;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     
   }
   .card {
  
-    height: 380px;
+    height: 400px;
    
   
   }
