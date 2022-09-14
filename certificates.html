@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body, html{
+        overflow-x: hidden;
+    }
+    .frameheight{
+    height: 600px;
+     /* xr 320px */
+    
+    }
+    .modal-dialog.modal-lg{
+        margin: 1% auto !important;
+    }
+    .modal-header{
+        padding:  0 !important;
+    }
+    .modal-body{
+        padding:  0 !important;
+    }.modal-footer{
+        padding:  5px !important;
+    }
+    @media (max-width: 992px){
+        .frameheight{
+         height:480px;
+     /* xr 320px */
+    }
+    }
+    @media (max-width: 414px){
+        .frameheight{
+         height: 330px;
+     /* xr 320px */
+    
+    }
+  
+   
+    }
+
+
+</style>
+<body>
+    <a href="#" data-toggle="modal" data-target="#myModal" aria-current="true">
+        Python
+       </a>
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  
+   
+  <!-- Modal -->
+  <section class="centerdiv">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+     
+        <div class="modal-body" >
+                <iframe src="https://drive.google.com/file/d/1XyDzIUGQQyavaANkCnAoMhLGCT5mF4uB/preview" width="100%" class="frameheight"   allow="autoplay"></iframe>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+</body>
+</html>
