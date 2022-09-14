@@ -32,9 +32,15 @@
         .frameheight{
          height:480px;
      /* xr 320px */
+    }  .modal-dialog.modal-lg{
+        margin: 150px 10% !important;
     }
     }
     @media (max-width: 414px){
+
+        .modal-dialog.modal-lg{
+        margin: 150px 5% !important;
+    }
         .frameheight{
          height: 330px;
      /* xr 320px */
@@ -47,6 +53,9 @@
 
 </style>
 <body>
+
+    <div id="b-placeholder">
+    </div>
     <a href="#" data-toggle="modal" data-target="#myModal" aria-current="true">
         Python
        </a>
@@ -73,4 +82,11 @@
 </div>
 
 </body>
+<script>
+    $(function () {
+      $("#b-placeholder").load("navbar.html");
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </html>
