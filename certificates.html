@@ -68,22 +68,18 @@
         
           <p> Python </p>
             <ul> 
-              <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-              <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-              <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-              <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-              <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python">Python</button>
+                </li>
              
             </ul>
           <br>  <br>
       
-          <p> Python </p>
+          <p> C# </p>
           <ul> 
-            <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
-            <li><a href="#" data-toggle="modal" data-target="#myModal" aria-current="true"> Python </a></li>
+            <li>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="C#.net">C#.net</button>
+              </li>
            
           </ul>
         <br>  <br>
@@ -99,9 +95,8 @@
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-     
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
         <div class="modal-body" >
-                <iframe src="https://drive.google.com/file/d/1XyDzIUGQQyavaANkCnAoMhLGCT5mF4uB/preview" width="100%" class="frameheight"   allow="autoplay"></iframe>
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -113,6 +108,23 @@
 </div>
 
 </body>
+<script>
+  $('#myModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) 
+  var recipient = button.data('whatever')
+  var modal = $(this)
+
+  const data = {
+    "Python": `<iframe src="https://drive.google.com/file/d/1XyDzIUGQQyavaANkCnAoMhLGCT5mF4uB/preview" width="100%" class="frameheight"   allow="autoplay"></iframe>`,
+    "C#.net" : `<iframe src="https://drive.google.com/file/d/1T2Oc04MtFZjN3kpykaW94JaGxUjoYkkY/preview" width="100%" class="frameheight" allow="autoplay"></iframe>`
+  }
+
+  var datavalue = data[recipient]
+  modal.find('.modal-title').text(recipient + ' Certificate' )
+  modal.find('.modal-body').html(datavalue)
+
+})
+</script>
 <script>
     $(function () {
       $("#b-placeholder").load("navbar.html");
