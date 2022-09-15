@@ -11,16 +11,11 @@ body {
 #navigation-menu ul, #myNav ul {
   list-style-type: none;
 }
-
-a {
-  text-decoration: none;
-  color: black;
+a:-webkit-any-link{
+  text-decoration: none !important;
 }
 
-a:hover {
-  color: #cf4624;
-}
-nav {
+nav#navigation-menu{
     position: sticky;
     top: 0;
     left: 0;
@@ -32,24 +27,27 @@ nav {
     background-color: #fcfcfc;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
-  nav h1 {
+  #navigation-menu h1 {
     color: black;
-    
+    font-size: 24px !important;
+    font-weight: 700;
+    margin: 0px  !important;
   }
   
-  nav a {
+  nav#navigation-menu ul li a {
     color: black;
     transition: 0.3s;
-    
+    font-size: 16px !important;
   }
-  #navigation-menu  a:hover {
-    color: #cf4624;
-    border-bottom: 2px solid ;
+  nav#navigation-menu ul a:hover {
+    color: #cf4624 !important;
+    border-bottom: 2px solid !important;
   }
   
   nav ul {
     display: flex;
     gap: 1.9rem;
+    margin-bottom: 0px  !important;
   }
   
   nav ul li {

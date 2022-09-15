@@ -220,8 +220,8 @@ const car = {
         "projectlanguage": "Web",
         "imagelink": 'https://www.nicepng.com/png/full/985-9857805_html5-css3-logo-png-html-and-css-logo.png',
         "title": "Creation of My Portfolio",
-        "description":"Using github to upload and to view the mileston of the creation of my portfolio. ",
-        "projectlink":"https://codepen.io/jvcataquiz"
+        "description":"Using github to upload and to view the milestone of the creation of my portfolio. ",
+        "projectlink":"https://github.com/jvcataquiz/MyPortfolio-allprojects-"
       },
       { 
         "projectlanguage": "Web",
