@@ -375,7 +375,9 @@ nav {
       height: 10.5rem;
       
     }
-  
+    .aboutmyself{
+      margin: 2rem 8%;
+    }
     .bio {
       width: 18.3rem;
     }
@@ -389,6 +391,9 @@ nav {
     }
     .aboutmyself ul {     line-height: var(--line-height);
       padding: 0.3rem 0;display:inline-block; margin-left:2rem; }
+      .timeline-content{
+        margin-top: 1rem;
+      }
   } 
 
 
