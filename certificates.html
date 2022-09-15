@@ -30,6 +30,12 @@
     }.modal-footer{
         padding:  5px !important;
     }
+    #about-myself li{
+    margin: 1rem 0;
+    }
+    #about-myself button:hover{
+      background-color: coral;
+    }
     @media (max-width: 992px){
         .frameheight{
          height:480px;
@@ -37,6 +43,7 @@
     }  .modal-dialog.modal-lg{
         margin: 150px 10% !important;
     }
+    
     }
     @media (max-width: 414px){
 
@@ -48,6 +55,9 @@
      /* xr 320px */
     
     }
+    button.btn.btn-primary {
+    font-size: 13px;
+}
   
    
     }
@@ -62,27 +72,50 @@
 
     <section id="about-myself">
     
-        <h2 id="more" class="title-a titleblk">Cerificates</h2>
+        <h2 id="more" class="title-a titleblk">Cerificates Links</h2>
         
         <div class="aboutmyself">
-        
+          <p> College of Engineering OJT </p>
+            <ul> 
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Cert1">Certification of Completion OJT</button>
+              </li>
+             
+            </ul>
+          <br>
           <p> Python </p>
             <ul> 
               <li>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python">Python</button>
-                </li>
-             
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python1">Learning Python</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python2">Learning Python (2020)</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python3">Python Essential Training</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python4">Programming Foundations: Fundamentals</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python5">Programming for Beginners Using Python</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python6">Programming for Intermediate Users Using Python</button>
+              </li>
+              <li>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="Python7">Python for Students</button>
+              </li>
             </ul>
-          <br>  <br>
-      
-          <p> C# </p>
+          <br>
+          <p> Web Development </p>
           <ul> 
             <li>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-whatever="C#.net">C#.net</button>
               </li>
            
           </ul>
-        <br>  <br>
+        <br> 
         </div>
       </section>
     
@@ -95,7 +128,7 @@
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <!-- <h5 class="modal-title" id="exampleModalLabel"></h5> -->
         <div class="modal-body" >
         </div>
         <div class="modal-footer">
@@ -115,12 +148,20 @@
   var modal = $(this)
 
   const data = {
-    "Python": `<iframe src="https://drive.google.com/file/d/1XyDzIUGQQyavaANkCnAoMhLGCT5mF4uB/preview" width="100%" class="frameheight"   allow="autoplay"></iframe>`,
-    "C#.net" : `<iframe src="https://drive.google.com/file/d/1T2Oc04MtFZjN3kpykaW94JaGxUjoYkkY/preview" width="100%" class="frameheight" allow="autoplay"></iframe>`
+    "Cert1" :`<iframe src="https://drive.google.com/file/d/11QZAawz8z-1B4MPPRdOWAXT_d9F2Ru-0/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python1": `<iframe src="https://drive.google.com/file/d/1Y3MB_LFDkwNwTs2yGrLxUTw0-vGeJFOR/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python2": `<iframe src="https://drive.google.com/file/d/1Y5c6EKR6C6m4EDGKil_w1mXj0upOoZwY/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python3": `<iframe src="https://drive.google.com/file/d/1YXyohhu36uezgfZl5YHNIIYCadruEkjD/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python4": `<iframe src="https://drive.google.com/file/d/1YNKAH3DSt1-zc92ckuW-NO5aJ8u63wUD/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python5": `<iframe src="https://drive.google.com/file/d/1iIbEMBpvdy-iCy-zKGmzIBKBPIQHG9Cc/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python6": `<iframe src="https://drive.google.com/file/d/1NdKV1K1B6ChmuMT_5PcA9i9-wWJ6pjKs/preview" width="640" height="480" allow="autoplay"></iframe>`,
+    "Python7": ``,
+    "Python8": ``,
+    "Python9": ``,
   }
 
   var datavalue = data[recipient]
-  modal.find('.modal-title').text(recipient + ' Certificate' )
+  // modal.find('.modal-title').text(recipient + ' Certificate' )
   modal.find('.modal-body').html(datavalue)
 
 })
