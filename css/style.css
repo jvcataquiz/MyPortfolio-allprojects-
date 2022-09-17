@@ -61,7 +61,7 @@ a:hover {
  
 }
 .dlresume a{
-   padding: 1rem 0.5rem;
+   padding: 0.75rem 0.5rem;
    background-color: rgba(226, 15, 15, 0.863);
    color: white !important;
    font: 0.5rem;

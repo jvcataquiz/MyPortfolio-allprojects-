@@ -136,7 +136,7 @@
     gap: .5rem;
     max-width: 68.75rem;
     margin: auto;
-    
+    margin: 2rem 0 !important;
   }
  }
  .centertitle{

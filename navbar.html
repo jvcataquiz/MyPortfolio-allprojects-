@@ -147,12 +147,25 @@ cursor: pointer;
             div.mobile-nav-btn {
                 display: block;
             }
-   
+            .overlay .sidenav{
+              width: 70%;
+              
+            }
+            .overlay{
+              display: flex;
+              justify-content: center;
+            }
+            .dlresume a:hover{
+  
+           background-color:  white !important;
+           color:red !important;
+      }
 } 
 
 </style>
 </head>
 <body>
+
     <nav id="navigation-menu">
         <h1><a href="index.html" class="nav-link">Portfolio</a></h1>
         <ul class="navigation">
@@ -168,12 +181,14 @@ cursor: pointer;
 
 
 <div id="myNav" class="overlay">
+  <div class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
+   <div class="overlay-content">
     <a href="projects.html" class="nav-link">Projects</a>
     <a href="certificates.html" class="nav-link">Certificates</a>
     <span class="dlresume"><a class="dlresume" href="https://drive.google.com/file/d/1tZ7qIcOoxWVuyGI4wlod4DUOclpl97Lf/view" target="_blank" onclick = "alert('Thank you for Viewing My Resume! \nYou will redirect to a Drive Link for Privacy')"><i class="fa fa-download"></i>  View Resume</a></span>
   </div>
+</div>
 </div>
 
 <script>
